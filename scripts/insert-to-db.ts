@@ -1,5 +1,5 @@
 async function insertToDb(event: any) {
-  console.log(event);
+  console.log({ event });
   // TODO implement
   const response = {
     statusCode: 200,
