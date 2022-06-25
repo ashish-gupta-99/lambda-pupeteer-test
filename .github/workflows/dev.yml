@@ -1,0 +1,24 @@
+name: Deploye Lambda
+
+on:
+  push:
+    branches:
+      - dev
+
+jobs:
+  deploye_lambda:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v3
+      - uses: actions/setup-node@v3
+        with:
+          node-version: 14
+      - name: npm install
+        env:
+          CI: true
+        run: npm ci
+      
+      - name: compile
+        run: npm run-script build
+      
+      

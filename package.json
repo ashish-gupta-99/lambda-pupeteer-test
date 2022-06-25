@@ -1,0 +1,25 @@
+{
+  "name": "lambda-pupeteer-test",
+  "version": "1.0.0",
+  "description": "ci/cd  lambda test",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "build": "npx tsc scripts/* --outDir compiled_scripts"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/ashishgupta-codeb/lambda-pupeteer-test.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/ashishgupta-codeb/lambda-pupeteer-test/issues"
+  },
+  "homepage": "https://github.com/ashishgupta-codeb/lambda-pupeteer-test#readme",
+  "devDependencies": {
+    "@types/node": "^18.0.0",
+    "typescript": "^4.7.4"
+  }
+}
