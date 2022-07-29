@@ -1,25 +1,26 @@
 {
-  "name": "lambda-pupeteer-test",
+  "name": "insert-into-sohm",
   "version": "1.0.0",
-  "description": "ci/cd  lambda test",
+  "description": "",
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "build": "npx tsc scripts/* --outDir compiled_scripts"
-  },
-  "repository": {
-    "type": "git",
-    "url": "git+https://github.com/ashishgupta-codeb/lambda-pupeteer-test.git"
+    "build": "npx tsc index.ts --outDir compiled"
   },
   "keywords": [],
   "author": "",
   "license": "ISC",
-  "bugs": {
-    "url": "https://github.com/ashishgupta-codeb/lambda-pupeteer-test/issues"
-  },
-  "homepage": "https://github.com/ashishgupta-codeb/lambda-pupeteer-test#readme",
   "devDependencies": {
+    "@types/mongodb": "^4.0.7",
     "@types/node": "^18.0.0",
+    "@types/puppeteer": "^5.4.6",
+    "dotenv": "^16.0.1",
+    "puppeteer": "^15.3.0",
     "typescript": "^4.7.4"
+  },
+  "dependencies": {
+    "mongodb": "^4.7.0",
+    "chrome-aws-lambda": "^7.0.0",
+    "puppeteer-core": "^7.0.3"
   }
 }
